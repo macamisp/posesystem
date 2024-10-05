@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="icon" href="Polish_20210808_210132987.jpg" type="image/jpeg">
+ <link rel="stylesheet"href="payment.css">
+</head>
+<body>
+    <div class="cart-container">
+        <h2>Your Order</h2>
+        <div class="cart-total">
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">Total: රු 0.00</div>
+            <div class="payment-methods">
+                <h3>Select Payment Method</h3>
+                <div class="payment-option">
+                    <input type="radio" id="cash" name="payment" value="Cash" checked>
+                    <label for="cash">Cash</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="card" name="payment" value="Card">
+                    <label for="card">Credit/Debit Card</label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="online" name="payment" value="Online">
+                    <label for="online">Online Payment</label>
+                </div>
+            </div>
+            <button class="checkout-btn" onclick="generateBill()">Proceed to Checkout</button>
+        </div>
+        <div class="bill-section" style="display: none;">
+            <h2>Bill</h2>
+            <div class="bill-details">
+               
+            </div>
+            <button class="print-btn" onclick="window.print()">Print Bill</button>
+        </div>
+    </div>
+    <script src="payement.js"></script>
+</body>
+</html>

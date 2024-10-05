@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #FF6B35;
+    --secondary-color: #4CAF50;
+    --accent-color: #3CAEA3;
+    --background-color: #F6F7F8;
+    --text-color: #2C3E50;
+    --border-color: #E0E6ED;
+    --hover-color: #FF8C00;
+    --card-bg-color: #FFFFFF;
+    --button-text-color: #FFFFFF;
+    --cart-bg-color: #E8EEF2;
+}
+
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.cart-container {
+    padding: 20px;
+    background-color: var(--cart-bg-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cart-items {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.cart-summary {
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.cart-total {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.checkout-btn:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.payment-methods {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--card-bg-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment-option input {
+    margin-right: 10px;
+}
+
+.bill-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bill-details {
+    margin-bottom: 20px;
+}
+
+.print-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.print-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
